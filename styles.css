@@ -7,12 +7,53 @@ body {
     grid-template-areas: 
     "dashboard header header"
     "dashboard projects sidebar";
+    font-family: "Roboto";
 }
 
 .dashboard {
     grid-area: dashboard;
     grid-row: 1 / 3;
-    background-color: royalblue;
+    background-color: #0ea5e9;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.dashboard > .toprow {
+    display: flex;
+    gap: 1vw;
+    margin-left: 1vw;
+    margin-bottom: 2vh;
+    margin-top: 1.5vh;
+    align-items: center;
+}
+
+.dashboardTitleImg {
+    filter: invert(100%);
+    height: 7vh;
+}
+
+.dashboardTitle {
+    font-size: 3vmin;
+}
+
+.dashboard > .row {
+    display: flex;
+    gap: 2vw;
+    margin-left: 2vw;
+    align-items: center;
+    cursor: pointer
+}
+
+.dashboard > .row > .img {
+    filter: invert(100%);
+    height: 4vh;
+}
+
+.dashboard > .separator {
+    margin-bottom: 5vh;
 }
 
 .header {
