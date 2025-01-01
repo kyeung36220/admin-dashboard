@@ -133,9 +133,18 @@ body {
     cursor: pointer;
 }
 
+.searchIcon:hover {
+    filter: invert(83%) sepia(30%) saturate(7118%) hue-rotate(7deg) brightness(100%) contrast(101%);
+}
+
 
 .header > .toprow > .notifIcon {
     margin-left: auto;
+    cursor: pointer
+}
+
+.notifIcon:hover {
+    filter: invert(83%) sepia(30%) saturate(7118%) hue-rotate(7deg) brightness(100%) contrast(101%);
 }
 
 .header > .toprow > .searchBar {
@@ -154,11 +163,17 @@ body {
     height: 5vh;
     margin-left: 2vw;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .header > .toprow > .userRealName {
     margin-left: 1vw;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.userRealName:hover {
+    color: rgb(233, 178, 0)
 }
 
 /* bottomrow */
@@ -257,6 +272,11 @@ body {
 .mainPage > .projects > .cards > .card > .title{
     font-size: 1.1rem;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.cards .card .title:hover {
+    color: rgb(233, 178, 0)
 }
 
 .mainPage > .projects > .cards > .card > .subText{
@@ -269,10 +289,15 @@ body {
     margin-top: auto;
     justify-content: end;
     gap:1vw;
+    cursor: pointer;
 }
 
-.mainPage > .projects > .cards > .card > .icons > img {
+.mainPage > .projects > .cards > .card > .icons > .icon {
     height: 2.5vh;
+}
+
+.card .icons .icon:hover {
+    filter: invert(83%) sepia(30%) saturate(7118%) hue-rotate(7deg) brightness(100%) contrast(101%);
 }
 
 /* sidebar */
@@ -300,7 +325,7 @@ body {
     border-radius: 10px;
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.226);
     padding: 2vh 2vw;
-    height: 30vh;
+    height: 32vh;
     justify-content: center;
     font-size: 0.7rem;
 }
@@ -309,6 +334,11 @@ body {
     font-weight: bold;
     font-size: 0.8rem;
     margin-bottom: 0.1vh;
+    cursor: pointer
+}
+
+.card .title:hover {
+    color: rgb(233, 178, 0)
 }
 
 .card > .subtext {
@@ -323,6 +353,54 @@ body {
 }
 
 /* trending */
-.userPfp {
-    height: 4vh;
+
+.trending {
+    padding-top: 3vh;
+    display: grid;
+    grid-template-rows: 1fr, 40fr;
+}
+
+.trending .mainTitle {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: 1vh;
+}
+
+.trending .container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.226);
+    height: 32vh;
+    padding: 2vh 2vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.trending .container .user {
+    display: flex;
+    margin-bottom: 2vh;
+    gap: 1vw;
+}
+
+.trending .container .user .userinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.userinfo .username {
+    font-weight: bold;
+    cursor: pointer
+}
+
+.userinfo .username:hover {
+    color: rgb(233, 178, 0);
+}
+
+.userinfo .caption {
+    color: rgb(95, 95, 95);
+}
+.user .userPfp {
+    height: 5vh;
+    border-radius: 50%;
+    cursor: pointer
 }
